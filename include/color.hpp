@@ -37,12 +37,22 @@
 // todo: https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences
 
 // todo : move into hue namespace so it
+//control codes
 #define BOLD	        "\u001b[1m"
+#define DIM 	        "\u001b[2m"
 #define UNDERLINE	    "\u001b[4m"
-#define NO_UNDERLINE	"\u001b[24m"
+#define BLINK   	    "\u001b[5m"
 #define REVERSE_TEXT	"\u001b[7m"
-#define POSITIVE_TEXT	"\u001b[27m"
+#define HIDDEN      	"\u001b[8m"
 
+#define BOLD_RESET	        "\u001b[21m"
+#define DIM_RESET 	        "\u001b[22m"
+#define UNDERLINE_RESET	    "\u001b[24m"
+#define BLINK_RESET   	    "\u001b[25m"
+#define REVERSE_TEXT_RESET	"\u001b[27m"
+#define HIDDEN_RESET      	"\u001b[28m"
+
+// color codes
 #define DEFAULT "\u001b[0m"
 #define BLACK   "\u001b[30m"
 #define RED     "\u001b[31m"
@@ -83,7 +93,7 @@
 #define BK_WHITE         "\u001b[107m"
 
 // For the 256 colors, the background color starts from 48! while the forground starts with 38
-#define ORANGE_C256     "\u001b[38;5;202m" // this is a 256 color mode. The previous 8 bit colors are usually supported by all terminals. The 256 are not
+#define ORANGE_C256     "\u001b[38;5;202m" // this is a 256 color mode. The previous 8 bit colors are usually supported by all terminals. the 256 are not
 #define BK_PURPLE_C256  "\u001b[48;5;90m"
 
 //resets the color codes 

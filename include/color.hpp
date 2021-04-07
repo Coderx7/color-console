@@ -36,9 +36,10 @@
 // https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
 // todo: https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences
 
+// todo : move into hue namespace so it
 #define BOLD	        "\u001b[1m"
 #define UNDERLINE	    "\u001b[4m"
-#define NO UNDERLINE	"\u001b[24m"
+#define NO_UNDERLINE	"\u001b[24m"
 #define REVERSE_TEXT	"\u001b[7m"
 #define POSITIVE_TEXT	"\u001b[27m"
 
@@ -82,7 +83,7 @@
 #define BK_WHITE         "\u001b[107m"
 
 // For the 256 colors, the background color starts from 48! while the forground starts with 38
-#define ORANGE_C256     "\u001b[38;5;202m" // this is a 256 color mode. The previous 8 bit colors are usually supported by all terminals. the 256 are not
+#define ORANGE_C256     "\u001b[38;5;202m" // this is a 256 color mode. The previous 8 bit colors are usually supported by all terminals. The 256 are not
 #define BK_PURPLE_C256  "\u001b[48;5;90m"
 
 //resets the color codes 
